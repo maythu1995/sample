@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="action_page.php">
+  <label for="fname">First name:</label><br> <!-- <label> Element -->
+  <input type="text" id="fnm" name="fnm" value="hfhsdfh"><br>  <!-- <input> Element -->
+  <br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lnm" name="lnm" value="Doe">
+  <br><br>
+  <label for="fruit">Choose a fruit:</label>
+  <select id="fruit" name="fruits">  <!-- <select> Element -->
+    <option value="apple">apple</option>
+    <option value="banana">banana</option>
+    <option value="orange">orange</option>
+  </select>
+  <br><br>
+  <textarea name="message" style="width:200px; height:200px;" >The cat was playing in the garden.</textarea> <!-- <textarea> Element -->
+  <br><br>
+  <button type="button" onclick="alert('Hello World!')">Click Me!</button><!-- <button> Element -->
+  <br><br>
+  <fieldset><!-- <fieldset> Element -->
+    <legend>about:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  </fieldset>
+  <br><br>
+  <input list="browsers" name="browser">
+  <datalist id="browsers"> <!-- <datalist> Element -->
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <br><br>Input Type
+  <!-- Input Type -->
+  <input type="button" value="btn"><br><br>
+  <input type="checkbox" ><br><br>
+  <input type="color"><br><br>
+  <input type="date"><br><br>
+  <input type="datetime-local"><br><br>
+  <input type="email"><br><br>
+  <input type="file"><br><br>
+  <input type="hidden"><br><br>
+  <input type="image"><br><br>
+  <input type="month"><br><br>
+  <input type="number"><br><br>
+  <input type="password"><br><br>
+  <input type="radio"><br><br>
+  <input type="range"><br><br>
+  <input type="reset"><br><br>
+  <input type="search"><br><br>
+  <input type="submit"><br><br>
+  <input type="tel"><br><br>
+  <input type="text"><br><br>
+  <input type="time"><br><br>
+  <input type="url"><br><br>
+  <input type="week"><br><br>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<!-- ------------------------- method="get" attr ------------------------- -->
+<h2> ------------------------- method="get" attr ------------------------- </h2>
+<form action="action_page.php" method="get">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fnm" name="fnm" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lnm" name="lnm" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+<!-- ------------------------- method="post" attr ------------------------- -->
+<h2> ------------------------- method="post" attr ------------------------- </h2>
+<form action="action_page.php" method="post">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fnm" name="fnm" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lnm" name="lnm" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+<!-- ------------------------- method="post" enctype attr------------------------- -->
+<h2> ------------------------- method="post" enctype attr ------------------------- </h2>
+<form action="action_page.php" method="post" enctype="multipart/form-data">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<!-- ------------------------- name attr ------------------------- -->
+<h2> ------------------------- name attr ------------------------- </h2>
+<form name="myForm" action="action_page.php" method="get">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="button" onclick="formSubmit()" value="Send form data!">
+</form>
+<!-- ------------------------- accept-charset="utf-8" attr ------------------------- -->
+<h2> ------------------------- accept-charset="utf-8" attr ------------------------- </h2>
+<form action="/action_page.php" accept-charset="utf-8">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
